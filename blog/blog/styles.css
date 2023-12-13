@@ -1,0 +1,262 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #ffffff;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px; 
+}
+
+/* Add more styles as needed */
+
+@media only screen and (max-width: 600px) {
+    /* Add responsive styles */
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+/* navigation */
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a,
+.topnav span,
+.cart {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover,
+.cart:hover {
+    background-color: #09c372;
+    color: white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* media queries */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+#home1  {
+    position: relative;
+    height:750px; 
+    background-image: url('https://simplygreenrebekah.com/wp-content/uploads/2020/01/Clean-Eating-Roundup_Blog-Featured-Image-1-1440x960.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    color: #fff;
+}
+
+#home2  {
+    position: relative;
+    height: 750px; 
+    background-image: url('https://heartsense.in/wp-content/uploads/2019/01/Heath-blog-guide-dr-vivek-baliga-1024x663.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#home3  {
+    position: relative;
+    height: 750px; 
+    background-image: url('https://drscottlear.com/wp-content/uploads/2020/02/health-blog.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.overlay {
+    z-index: 1;
+}
+
+.overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Adjust the overlay color and transparency as needed */
+    z-index: -1; /* Place the overlay behind the text */
+}
+/* 
+.blog-details {
+    max-width: 100% auto;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-details img {
+    width: 100%;
+    position: relative;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.blog-details .details {
+    flex: 1;
+}
+
+.blog-details h2 {
+    color: #333;
+}
+
+.blog-details p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.blog-details button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+    /* float; */
+/* }
+
+.blog-details button:hover {
+    background-color: #024674;
+} */ 
+
+
+/* Styling the container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 15px;
+}
+
+
+/* Example styles */
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Add more styles as needed */
+  

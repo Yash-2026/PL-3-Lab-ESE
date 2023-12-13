@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <!-- <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> -->
+        <a href="../contact/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="../login/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div> 
+
+
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Login</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <div class="error"></div>
+            </div>
+            <a href="../index.html"><button type="submit">Login</button></a>
+        </form>
+        <center>
+            <a href="../signup/signup.html">forgot password?</a><br>
+            <a href="../signup/signup.html">signup</a>
+        </center>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Health Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
